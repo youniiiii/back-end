@@ -1,0 +1,39 @@
+git GIT -- https://git-scm.com/
+1- git --version
+2- git config --global user.name "TU NOMBRE"
+3- git config --global user.email "tuemail@algo"
+4- Repasamos los datos si estan bien
+5- git config user.name
+6- git config user.email
+-------------------------------------------------------------
+7- CMD/Terminal -- Git Bash
+8- cd carpeta_repo
+9- git init
+10- EDITOR -- crear index.html 
+11- git status
+12- git add index.html / git add . --- agrega todo al stage
+13- git commit -m "subida del index"
+14- git log --oneline
+15- EDITOR -- crear linus.html o agregar cualquier contenido al repo
+16- git status
+17- git add . --- agrega todo al stage
+18- git commit -m "subimos linus" -- subida del commit
+19- git log --oneline --- veo todos los commit
+20- git checkout (cod de commit al que quiero volver)
+  revivir tu comit  o recuperarlo
+
+21- git reset --hard  codigo del comit completo se encuentra en la carpeta log de eel git 
+
+-------------------------------------------------------------
+21- git branch -- en q rama estoy
+22- git branch mi_rama_nueva -- creo una nueva rama
+23- git branch -l --- lista de las ramas de mi proyecto
+24- git checkout mi_rama_nueva --- me cambio de rama
+25- git checkout master -- vuelvo a la rama main
+26- git branch -d mi_rama --- borro la mi_rama
+27- git branch mi_rama_nueva2 -- creo una nueva rama
+28- EDITOR -- crear linux-que-es.html o agregar cualquier contenido al repo
+-------------------------------------------------------------
+27- git checkout master (me muevo a mi rama master)
+28- git merge mi_rama_nueva2  --- fusionamos la nueva rama a nuestra rama master
+
