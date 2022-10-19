@@ -6,17 +6,22 @@
         this.mascotas =  mascotas
     }
     getFullName(){
-        return this.nombre;
+        return `{this.nombre} {this.apellido}`;
+
     }
     addMascotas(nombre){
     this.mascotas.push(nombre);
     }
-    countMascotas(){}
-    addBlock(nombres, autores){
-        this.libros.push({nombre:nombres,autor:autores})
+    countMascotas(
+    ){
+    return this.mascotas.length
+    }
+    addBlock(nombre, autor){
+        this.libros.push({nombre,autor})
     }
     getBlockNames(){
-        return this.libros
+            let bookNames= this.libros.map(libro => libro.nombre)
+            return bookNames
     }
 
 }
