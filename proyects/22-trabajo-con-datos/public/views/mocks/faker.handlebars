@@ -1,0 +1,24 @@
+<section class="cuerpo__respuesta">
+    <table class="cuerpo__tabla">
+        {{#if products.length}}
+            <tr class="tabla__encabezado">
+                <th> Nombre </th>
+                <th> Precio </th>
+                <th> Foto </th>
+            </tr>
+            {{#each products}}
+                <tr class="tabla__cuerpo">
+                    <td>{{this.nombre}}</td>
+                    <td>{{this.precio}}</td>
+                    <td>
+                        <img src="{{this.thumbnail}}" alt="{{this.nombre}}" width="40px" height="40px">
+                    </td>
+                </tr>
+            {{/each}}
+        {{/if}}
+    </table>
+    {{#if products.length}}
+    {{else}}
+        <h2 id="cuerpo__subtitulo">No se encontraron productos</h2>
+    {{/if}}
+</section>
